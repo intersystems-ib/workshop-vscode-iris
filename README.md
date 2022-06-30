@@ -11,7 +11,7 @@ This repository contains some examples you can use to learn about using VS Code 
 
 ## (a). Setup
 
-Run an InterSystems IRIS container
+Run an InterSystems IRIS container. If you are running Docker on Windows please, un-comment the `command` section in [docker-compose.yml](docker-compose.yml) file to avoid errors with the checking of Linux capabilities.
 
 ```
 docker-compose up -d

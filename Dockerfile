@@ -1,4 +1,4 @@
-FROM store/intersystems/irishealth-community:2021.1.0.205.0
+FROM store/intersystems/irishealth-community:2021.2.0.649.0
 
 # create /app
 USER root
