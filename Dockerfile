@@ -1,4 +1,4 @@
-FROM store/intersystems/irishealth-community:2021.2.0.649.0
+FROM intersystemsdc/irishealth-community:2022.1.0.209.0-zpm
 
 # create /app
 USER root
@@ -15,6 +15,9 @@ SHELL ["/irissession.sh"]
 
 RUN \
   zn "USER" \
+  # install webterminal
+  zpm "install webterminal" \
+  # load source code 
   do $system.OBJ.LoadDir("/app/install", "ck", .errorlog, 1, .loaded) \
   set sc = 1
   

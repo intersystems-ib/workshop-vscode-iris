@@ -1,8 +1,11 @@
 {
-    "objectscript.export.folder": "src",
     "objectscript.conn": {
         "active": true,
         "ns": "USER",
-        "server": "test~iris"
+        "server": "test~iris",
+        "links": {
+            "SOAP Wizard": "${serverUrl}/isc/studio/templates/%25ZEN.Template.AddInWizard.SOAPWizard.cls?Namespace=${namespace}${serverAuth}",
+            "WebTerminal": "${serverUrl}/terminal/"
+        }
     }
 }
